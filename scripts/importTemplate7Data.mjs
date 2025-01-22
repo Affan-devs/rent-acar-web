@@ -4,11 +4,16 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
+<<<<<<< HEAD
 // Load environment variables from .env.local
+=======
+
+>>>>>>> 7867f03 (building component)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, '../.env.local') });
 
+<<<<<<< HEAD
 // Create Sanity client
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
@@ -16,6 +21,15 @@ const client = createClient({
   useCdn: false,
   token: process.env.SANITY_API_TOKEN,
   apiVersion: '2021-08-31'
+=======
+
+const client = createClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  token: process.env.SANITY_API_TOKEN,
+  apiVersion: '2021-08-31',
+  useCdn: false,
+>>>>>>> 7867f03 (building component)
 });
 
 async function uploadImageToSanity(imageUrl) {

@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 export default  {
+=======
+export default {
+>>>>>>> 7867f03 (building component)
     name: 'car',
     type: 'document',
     title: 'Car',
